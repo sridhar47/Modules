@@ -1,4 +1,4 @@
-Components
+Modules
 ==========
 
-Jails components page
+Jails modules page
