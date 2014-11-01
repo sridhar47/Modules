@@ -1,0 +1,4 @@
+Components
+==========
+
+Jails components page
