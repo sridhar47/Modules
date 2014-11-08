@@ -1,6 +1,6 @@
 # presence
 
->This component detects the presence of elements in the page and group them in a object with required and optional elements. Fires a fail method if some required element is not found.
+>This module detects the presence of elements in the page and group them in a object with required and optional elements. Fires a fail method if some required element is not found.
 
 ---
 
@@ -84,14 +84,8 @@ presence.done(function( config )){
 
 ```js
 presence.fail(function(error){
-    //This is a override method, 
+    //This is a override method,
     //presence already fires up a fail method
     console.log( error );
 })
-```
-
-If you want a jsonp request:
-
-```js
-http.getJSON('/my/jsonp/service', { jsoncallback :'?' }, callback);
 ```
