@@ -1,6 +1,6 @@
 define(function(){
 
-	var uri = null, win = $(window);
+	var uri = null;
 
 	var Router = {
 
@@ -18,7 +18,7 @@ define(function(){
 		watch :function(routes){
 
 			this.routes = routes;
-			win.on('hashchange', change);
+			$(window).on('hashchange', change);
 
 		}
 	};
