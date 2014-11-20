@@ -1,37 +1,44 @@
 define(function(){
 
-	var uri = null;
-
 	var Router = {
 
-		context:location,
-		routes :null,
+		_class :function(routes, context){
 
-		execute:function(routes, url){
+			var _self = this, uri, win = $(window);
 
-			routes = routes || this.routes;
-			url    = url || this.context.hash;
+			this.context = context || location,
+			this.routes = routes || null;
 
-			return filter( routes, url );
+			this.execute = function(routes, url){
+
+				routes = routes || this.routes;
+				url    = url || this.context.hash;
+
+				return filter( routes, url );
+			};
+
+			this.watch = function(routes){
+
+				this.routes = routes || this.routes;
+				win.on('hashchange', change);
+			};
+
+			function change(){
+
+				if( !_self.context.hash ) return;
+
+				if( uri != _self.context.hash ){
+					uri = _self.context.hash;
+					_self.execute( null, _self.context.hash );
+				}
+			}
+
 		},
 
-		watch :function(routes){
-
-			this.routes = routes;
-			$(window).on('hashchange', change);
-
+		create :function(routes, context){
+			return new this_class(routes, context);
 		}
 	};
-
-	function change(){
-
-		if( !location.hash ) return;
-
-		if( uri != location.hash ){
-			uri = location.hash;
-			Router.execute( null, Router.context.hash );
-		}
-	}
 
 	function filter(array, url){
 

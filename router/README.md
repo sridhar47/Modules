@@ -10,7 +10,15 @@ You can get parameters by using `:something`, it will be sent as a parameter to 
 
 ## Methods
 
-### .watch( routes ) : `null`
+### .create( [routes] ) :`router`
+
+Creates a new instance of `router`.
+
+```js
+    var router = Router.create();
+```
+
+### .watch( [routes] ) : `null`
 Adds a listener in the `document.location` object, and sets routes.
 
 ```js
@@ -24,7 +32,7 @@ router.watch([
 ]);
 ```
 
-### .execute( routes, url ) : `null`
+### .execute( [routes], [url] ) : `null`
 This method is usefull when you want to execute routing in a standalone way.
 If routes or url is null, then Router will look routes in `Router.routes` and url in `document.location`.
 
