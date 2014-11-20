@@ -36,7 +36,7 @@ define(function(){
 		},
 
 		create :function(routes, context){
-			return new this_class(routes, context);
+			return new this._class(routes, context);
 		}
 	};
 
