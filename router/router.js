@@ -1,4 +1,4 @@
-define(function(){
+define(['jails'], function(jails){
 
 	var Router = {
 
@@ -67,6 +67,7 @@ define(function(){
 						ret[ k ] = result[j];
 					}
 
+					jails.data().params = ret;
 					json[key].apply( ret, result );
 
 					return ret;

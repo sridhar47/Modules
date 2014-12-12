@@ -7,6 +7,7 @@
 ---
 
 You can get parameters by using `:something`, it will be sent as a parameter to the function.
+Also, Router module will save url parameters in Jails `data` hub.
 
 ## Methods
 
