@@ -63,7 +63,7 @@ define(['jails'], function(jails){
 
 					for(j = 0; j < len; j++){
 						result[j] = decodeURIComponent( result[j] );
-						k = param[j].split(/\//).shift() || 'root';
+						k = param[j].split(/\//).pop().replace(/\W/, '') || 'root';
 						ret[ k ] = result[j];
 					}
 
