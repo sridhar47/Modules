@@ -42,19 +42,27 @@ define(function(){
 
 		_class :function(m){
 
-			var base = {};
-			base.on_update = m.on_update;
+			var method = {}, current;
+
+			current = change;
 
 			m.data( JSON.parse(localStorage.getItem( m.name )) );
-
-			m.on_update = function(data){
-				base.on_update.apply(m, arguments);
-				localStorage.setItem( m.name, JSON.stringify(data) );
-			};
+			m.on('change', execute);
 
 			this.unbind = function(){
-				m.on_update = base.on_update;
+				current = noop;
 			};
+
+			function change(){
+				localStorage.setItem( m.name, JSON.stringify(data) );
+			}
+
+			function noop(){}
+
+			function execute(e, data){
+				current( data );
+			}
+
 		},
 
 		create :function(model){ return new this._class(model); }
