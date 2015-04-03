@@ -47,19 +47,20 @@ define(function(){
 			current = change;
 
 			m.data( JSON.parse(localStorage.getItem( m.name )) );
+
 			m.on('change', execute);
 
 			this.unbind = function(){
 				current = noop;
 			};
 
-			function change(){
+			function change(data){
 				localStorage.setItem( m.name, JSON.stringify(data) );
 			}
 
 			function noop(){}
 
-			function execute(e, data){
+			function execute(data){
 				current( data );
 			}
 
