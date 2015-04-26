@@ -1,8 +1,8 @@
 # url
 
-> The **url** module helps you to redirect application url easily.
+> The **url** module helps you to redirect application url easily. It will change only the hash from `location` object, used on *deeplink* applications.
 
-> It will change only the hash from `location` object, used on *deeplink* applications.
+>**Author**: [Eduardo Ottaviani](//github.com/Javiani)
 
 ---
 

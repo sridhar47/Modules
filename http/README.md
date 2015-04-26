@@ -2,6 +2,8 @@
 
 >This component wraps all ajax requests you need.
 
+>**Author**: [Eduardo Ottaviani](//github.com/Javiani)
+
 ---
 
 ## Methods

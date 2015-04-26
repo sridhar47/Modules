@@ -4,6 +4,8 @@
 
 >The rules are a list of matching strings with priorities, the first element of the list have a higher priority over the rest of elements.
 
+>**Author**: [Eduardo Ottaviani](//github.com/Javiani)
+
 ---
 
 You can get parameters by using `:something`, it will be sent as a parameter to the function.
@@ -19,8 +21,9 @@ Creates a new instance of `router`.
     var router = Router.create();
 ```
 
-### .watch( [routes] ) : `null`
+### .watch( [routes], [callback] ) : `null`
 Adds a listener in the `document.location` object, and sets routes.
+Callback can be passed as second parameter, it will always be executed.
 
 ```js
 router.watch([

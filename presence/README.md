@@ -2,6 +2,8 @@
 
 >This module detects the presence of elements in the page and group them in a object with required and optional elements. Fires a fail method if some required element is not found.
 
+>**Author**: [Eduardo Ottaviani](//github.com/Javiani)
+
 ---
 
 ## Config

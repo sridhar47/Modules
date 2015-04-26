@@ -2,37 +2,52 @@ define(['jails'], function(jails){
 
 	var Router = {
 
-		_class :function(routes, context){
+		_class :function(o){
 
-			var _self = this, uri, win = $(window);
+			o = o || {};
 
-			this.context = context || location,
-			this.routes = routes || null;
+			var
+				_self = this, uri,
+				win = $(window), callback;
+
+			callback = o.callback || new Function;
+
+			this.context = o.context || function(){ return location.hash };
+			this.routes = null;
 
 			this.execute = function(routes, url){
 
-				routes = routes || this.routes;
-				url    = url || this.context.hash;
+				var ret;
 
-				return filter( routes, url );
+				routes = routes || this.routes;
+				url    = url || this.context();
+				ret = filter( routes, url );
+
+				callback();
+				return ret;
 			};
 
-			this.watch = function(routes){
+			this.watch = function(routes, always){
 
 				this.routes = routes || this.routes;
+
+				callback = always? always :callback;
 				win.on('hashchange', change);
+			};
+
+			this.change = function(){
+				change();
 			};
 
 			function change(){
 
-				if( !_self.context.hash ) return;
+				if( !_self.context() ) return;
 
-				if( uri != _self.context.hash ){
-					uri = _self.context.hash;
-					_self.execute( null, _self.context.hash );
+				if( uri != _self.context() ){
+					uri  = _self.context();
+					_self.execute( null, _self.context() );
 				}
 			}
-
 		},
 
 		create :function(routes, context){
@@ -44,7 +59,7 @@ define(['jails'], function(jails){
 
 		var
 			result = null,
-			i, json, key, param, aux, len, j, k, ret;
+			i, json, key, param, aux, len, j, k, ret, always;
 
 		ret = {};
 
@@ -74,6 +89,7 @@ define(['jails'], function(jails){
 				}
 			}
 		}
+
 
 		return ret;
 	};
