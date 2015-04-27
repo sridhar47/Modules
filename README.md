@@ -12,6 +12,7 @@
 
 > ## DOM
 * [presence](//github.com/jails-scaffold/Modules/tree/master/presence "Presence Module")
+* [visibility](//github.com/jails-scaffold/Modules/tree/master/visibility "Visibility Module")
 
 ---
 
