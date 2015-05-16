@@ -25,3 +25,5 @@
 > ## Persistence
 * [persistence](//github.com/jails-scaffold/Modules/tree/master/persistence "Persistence Module")
 * [cache](//github.com/jails-scaffold/Modules/tree/master/cache "Cache Module")
+* [model](//github.com/jails-scaffold/Modules/tree/master/model "Model Module")
+* [cookies](//github.com/jails-scaffold/Modules/tree/master/cookies "Cookies Module")
