@@ -23,8 +23,5 @@
 ---
 
 > ## Persistence
-*
-[persistence](//github.com/jails-scaffold/Modules/tree/master/persistence "Persistence Module")
-
-*
-[cache](//github.com/jails-scaffold/Modules/tree/master/cache "Cache Module")
+* [persistence](//github.com/jails-scaffold/Modules/tree/master/persistence "Persistence Module")
+* [cache](//github.com/jails-scaffold/Modules/tree/master/cache "Cache Module")
