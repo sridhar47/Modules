@@ -5,6 +5,11 @@
 
 ---
 
+> ## Debuggers
+* [debug](//github.com/jails-scaffold/Modules/tree/master/debug "Debug Module")
+
+---
+
 > ## Ajax
 * [http](//github.com/jails-scaffold/Modules/tree/master/http "Http Module")
 
