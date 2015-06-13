@@ -99,11 +99,17 @@ define(['jails'],function( jails ){
 
 				var element = $(m[c]);
 
-				element.on('execute', function(e, o){
+				element.on('instance', function(e){
+					e.stopPropagation();
+				});
 
-					element.trigger('instance', function(e , instance){
+				element.on('execute', function(e, o){
+					element.trigger('instance', function(name, instance){
 						var method = o.args[0];
-						if(!method in this){
+						if(!method){
+							console.error( print( '{0}() was executed with no method argument. \nYou need to pass a method name. e.g {0}("someMethod")', this.name, method ) );
+						}
+						else if(!(method in this)){
 							console.warn( print( '{0} has no method %c.{1}().', this.name, method ), 'color:red' );
 						}
 					});
