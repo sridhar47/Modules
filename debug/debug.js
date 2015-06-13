@@ -14,7 +14,7 @@ define(['jails'],function( jails ){
 			string = string.replace( new RegExp('\\{' + (i-1) + '\\}', 'g'), arguments[i] );
 		}
 
-		return 'Jails::debug -> ' + string;
+		return '👓[Jails:Module:debug] 👉 ' + string;
 	}
 
 	//1. Html markup not found
@@ -110,7 +110,8 @@ define(['jails'],function( jails ){
 							console.error( print( '{0}() was executed with no method argument. \nYou need to pass a method name. e.g {0}("someMethod")', this.name, method ) );
 						}
 						else if(!(method in this)){
-							console.warn( print( '{0} has no method %c.{1}().', this.name, method ), 'color:red' );
+							console.warn( print( '{0} has no method %c.{1}().', this.name, method ), 'color:red; font-weight:bold' );
+							console.warn( print('%cDon\'t worry with that if you have another component in the same html markup that has it ✓'), 'font-style:italic' );
 						}
 					});
 				});
@@ -138,7 +139,7 @@ define(['jails'],function( jails ){
 
 		root = document.documentElement;
 
-		console.log( '%cWelcome to Jails Debugger', 'color:#336699');
+		console.log( '👓%c[ Welcome to Jails Debugger Module ]👓', 'color:#336699');
 
 		no_used_modules();
 		no_module_found();
