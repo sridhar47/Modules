@@ -111,7 +111,7 @@ define(['jails'],function( jails ){
 						}
 						else if(!(method in this)){
 							console.warn( print( '{0} has no method %c.{1}().', this.name, method ), 'color:red; font-weight:bold' );
-							console.warn( print('%cDon\'t worry with that if you have another component in the same html markup that has it ✓'), 'font-style:italic' );
+							console.info( print('%cDon\'t worry with that warning if you have another component in the same html markup that has it ✓'), 'font-style:italic' );
 						}
 					});
 				});
