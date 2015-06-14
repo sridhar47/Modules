@@ -19,17 +19,17 @@ Debugger is on development, it's not efficient yet, but it will get there =).
 require.config({
 
     baseUrl :'assets/js/',
-    deps    :['jquery', 'jails', `'debug'`, global.page],
+    deps    :['jquery', 'jails', 'debug', global.page],
 
     paths   :{
         jails		:'//rawgit.com/jails-org/Jails/master/source/jails.min',
         jquery 		:'//code.jquery.com/jquery-2.1.1.min',
-        `debug		:'my/modules/debug'`
+        debug		:'my/modules/debug'
     },
 
     callback :function( jquery, jails, debug ){
 
-        `debug();`
+        debug();
         jails.start({ base :jquery });
     }
 });
