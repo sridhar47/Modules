@@ -29,13 +29,6 @@
 		},
 
 		{
-			"name" :"tab",
-			"authors" :["Eduardo Ottaviani"],
-			"description" :"Just a simple tab component.",
-			"section" :"List"
-		},
-
-		{
 			"name" :"url",
 			"authors" :["Eduardo Ottaviani"],
 			"description" :"The url module helps you to redirect application url easily. It will change only the hash from location object, used on deeplink applications.",
