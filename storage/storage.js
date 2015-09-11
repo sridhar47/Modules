@@ -16,7 +16,7 @@ define(function(){
 			json = json.replace(new RegExp('"' + placeholder + '"', 'g'), function(_) {
 				return fns.shift();
 			});
-			return 'this["' + prop + '"] = ' + json + ';';
+			return json;
 	}
 
 	return{
