@@ -48,6 +48,12 @@
 			"section" :"URL"
 		},
 		{
+			"name" :"storage",
+			"authors" :["Eduardo Ottaviani"],
+			"description" :"This AMD module has the simplest way to use the localStorage object, very useful to persist data on client side.",
+			"section" :"Persistence"
+		},
+		{
 			"name" :"persistence",
 			"authors" :["Eduardo Ottaviani"],
 			"dependencies" :["Model"],
