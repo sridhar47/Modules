@@ -8,6 +8,8 @@
 
 This AMD module has the simplest way to use the localStorage object, very useful to persist data on client side.
 
+** The storage AMD only takes Object as data to save on localStorage. **
+
 ## Usage
 
 ```js
