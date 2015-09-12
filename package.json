@@ -1,0 +1,24 @@
+{
+  "name": "jails-modules",
+  "version": "1.0.0",
+  "description": "Jails Modules Repository",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jails-org/Modules.git"
+  },
+  "keywords": [
+    "AMD",
+    "Framework",
+    "Jails"
+  ],
+  "author": "Javiani",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jails-org/Modules/issues"
+  },
+  "homepage": "https://github.com/jails-org/Modules"
+}
