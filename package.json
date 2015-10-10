@@ -1,7 +1,7 @@
 {
-  "name": "jails-modules",
-  "version": "1.0.0",
-  "description": "Jails Modules Repository",
+  "name": "{{MyProject}}",
+  "version": "0.0.0",
+  "description": "My Modules repository",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,15 +10,15 @@
     "type": "git",
     "url": "https://github.com/jails-org/Modules.git"
   },
-  "keywords": [
-    "AMD",
-    "Framework",
-    "Jails"
-  ],
-  "author": "Javiani",
-  "license": "ISC",
+  "author": "Your Name",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/jails-org/Modules/issues"
   },
-  "homepage": "https://github.com/jails-org/Modules"
+  "homepage": "https://github.com/jails-org/Modules",
+  "keywords": [
+    "AMD",
+    "Jails",
+    "Modules"
+  ]
 }

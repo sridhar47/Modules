@@ -1,11 +1,13 @@
+# Modules
 
-# Modules 
+> This is the Template for all Jails modules project
 
-> Modules respository keeps all official and registered Jails **AMD Modules**.
-You can find your Jails module in the respository page.
+You can create your own Modules repository and help the Jails community to be great!
 
----
+You just have to:
 
-<img src="http://jails-org.github.io/Jails/repository/assets/images/mo.png" width="200" style="display:block; margin:0 auto" />  
+1. Clone this repository
+2. Use the existing files to scaffold your own project and  follow the templates standards.
+3. Share with us!
 
-[Jails.org / Repository / Modules](//jails-org.github.io/Jails/repository/modules.htm "Repository for Jails Modules")
+And be sure that you're creating a repository with a different purposes, always prefer to help the existing repositories instead of create a new one that makes exactly the same thing.
