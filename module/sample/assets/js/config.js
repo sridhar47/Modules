@@ -4,7 +4,7 @@ require.config({
 	deps    :['jquery', 'jails', global.page],
 
 	paths   :{
-		jails		:'//rawgit.com/jails-org/Jails/master/source/jails.min',
+		jails		:'//rawgit.com/jails-org/Jails/rebuild/jails/source/jails.min',
 		jquery 		:'//code.jquery.com/jquery-2.1.1.min'
 	},
 
