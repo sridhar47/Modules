@@ -8,7 +8,7 @@
 
 >**Author**: [Author's name](http://link-to-find-me)
 
->**Sample**: [Demo](//rawgit.com/jails-org/Modules/master/module/sample/index.htm)
+>**Sample**: [Demo](//rawgit.com/jails-org/Modules/master/my-module/sample/index.htm)
 
 
 ---
