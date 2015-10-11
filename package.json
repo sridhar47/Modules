@@ -1,24 +1,24 @@
 {
-  "name": "jails-modules",
-  "version": "1.0.0",
-  "description": "Jails Modules Repository",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jails-org/Modules.git"
-  },
-  "keywords": [
-    "AMD",
-    "Framework",
-    "Jails"
-  ],
-  "author": "Javiani",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jails-org/Modules/issues"
-  },
-  "homepage": "https://github.com/jails-org/Modules"
+    "name": "jails-modules",
+    "version": "1.0.0",
+    "description": "Jails Modules - jQuery and Zepto dependency",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jails-org/Modules.git/tree/jquery/zepto"
+    },
+    "author": "Javiani",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jails-org/Modules/issues"
+    },
+    "homepage": "https://github.com/jails-org/Modules/tree/jquery/zepto",
+    "keywords": [
+        "AMD",
+        "Jails",
+        "Modules"
+    ]
 }
