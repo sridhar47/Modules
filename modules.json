@@ -3,7 +3,8 @@
 		"classname" :"modules",
 		"title" :"Mo",
 		"name"	:"Module",
-		"description":"Ousider &amp; Generic"
+		"description":"Ousider & Generic",
+		"package":"mods"
 	},
 	"items" :[
 		{
