@@ -8,14 +8,14 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/jails-org/Modules.git/tree/master"
+        "url": "https://github.com/jails-org/Modules.git/tree/jquery/zepto"
     },
     "author": "Javiani",
     "license": "MIT",
     "bugs": {
         "url": "https://github.com/jails-org/Modules/issues"
     },
-    "homepage": "https://github.com/jails-org/Modules/tree/master",
+    "homepage": "https://github.com/jails-org/Modules/tree/jquery/zepto",
     "keywords": [
         "AMD",
         "Jails",
