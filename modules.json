@@ -36,7 +36,7 @@
 			"name" :"pubsub",
 			"authors" :["Eduardo Ottaviani"],
 			"description" :"A global pubsub container to handle publish and subscribe pattern, triggers a custom event and listen to them aswell. Very useful to decouple your components and make them more standalone",
-			"section" :"Dom/Events"
+			"section" :"Events"
 		}
 
 	]
