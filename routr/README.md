@@ -46,7 +46,7 @@ routr({
 ### .run( [String] );
 You need to call `.run` method in order to check the url patterns. You can choose to pass a string with a url to be matched, otherwise **routr** will compare the pattern's rules with `location.hash`.
 
-You may question why you need to call `.run` method instead of that method being called automatically. Well, there's some cases where you're routr is ready before other module in your page, so, if your module depends on routr, and it's not ready yet, routr will try to call your method before it exists.
+You might wondering why that `.run` method isn't called automatically. Well, there're some cases where your routr is ready before other module in your page, so, if your module depends on routr, and it's not ready yet, routr will try to call your method before it exists. Also when you want to run routr after an ajax call.
 
 This method is specially useful if you have any ajax calls on page load.
 
