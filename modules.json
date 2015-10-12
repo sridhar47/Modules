@@ -1,93 +1,10 @@
 {
 	"items" :[
 		{
-			"name" :"debug",
-			"authors":["Eduardo Ottaviani"],
-			"description" :"Debug is a automated tool for debugging Jails modules interactions.",
-			"section":"Debuggers"
-		},
-
-		{
-			"name" :"http",
-			"authors":["Eduardo Ottaviani"],
-			"description" :"This component wraps all ajax requests you need.",
-			"section" :"Ajax"
-		},
-
-		{
-			"name" :"presence",
-			"authors" :["Eduardo Ottaviani"],
-			"description" :"This module detects the presence of elements in the page and group them in a object with required and optional elements. Fires a fail method if some required element is not found.",
-			"section" :"DOM"
-		},
-
-		{
-			"name" :"visibility",
-			"authors" :["Eduardo Ottaviani"],
-			"description":"Checks wheter an html element is on visible area of the browser or not.",
-			"section" :"DOM"
-		},
-
-		{
-			"name" :"url",
-			"authors" :["Eduardo Ottaviani"],
-			"description" :"The url module helps you to redirect application url easily. It will change only the hash from location object, used on deeplink applications.",
-			"section" :"URL"
-		},
-
-		{
-			"name" :"router",
-			"authors":["Eduardo Ottaviani"],
-			"description" :"This is a routing module, executes a method over a set of rules. The rules are a list of matching strings with priorities, the first element of the list have a higher priority over the rest of elements.",
-			"section" :"URL"
-		},
-        {
-			"name" :"routr",
-			"authors":["Eduardo Ottaviani"],
-			"description" :"An improved Router for your applications, simple calls, more faster then Router and standalone. It was created after observations on the regular Router usage, so has the same advantages but and better written.",
-			"section" :"URL"
-		},
-		{
-			"name" :"storage",
-			"authors" :["Eduardo Ottaviani"],
-			"description" :"This AMD module has the simplest way to use the localStorage and sessionStorage objects, very useful to persist data on client side.",
-			"section" :"Persistence"
-		},
-		{
-			"name" :"persistence",
-			"authors" :["Eduardo Ottaviani"],
-			"dependencies" :["Model"],
-			"description" :"This Module persist model changes into Storage system.",
-			"section" :"Persistence"
-		},
-
-		{
-			"name" :"cache",
-			"authors" :["Eduardo Ottaviani"],
-			"description" :"A simple module for caching data, it can be used to save some url of ajax requests for instance.",
-			"section" :"Persistence"
-		},
-
-		{
-			"name" :"model",
-			"authors" :["Eduardo Ottaviani"],
-			"description" :"Jails Models does not have any relationship with the other Jails classes aswell your application. It is just a simple AMD module with some helpful CRUD and FIND methods.",
-			"section" :"Persistence"
-		},
-
-		{
-			"name" :"cookies",
-			"authors" :["Leandro Vieira Pinho", "Eduardo Ottaviani"],
-			"description" :"Just a simple cookie wrapper to deal with document.cookie property.",
-			"section" :"Persistence"
-		},
-
-        {
-			"name" :"pubsub",
-			"authors" :["Eduardo Ottaviani"],
-			"description" :"A global pubsub container to handle publish and subscribe pattern, triggers a custom event and listen to them aswell. Very useful to decouple your components and make them more standalone",
-			"section" :"Dom/Events"
+			"name" :"modules",
+			"authors":["Your Name", "Other Guy"],
+			"description" :"A simple template for a module",
+			"section" :"sample"
 		}
-
 	]
 }
