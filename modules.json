@@ -1,4 +1,10 @@
 {
+	"element":{
+		"classname" :"modules",
+		"title" :"Mo",
+		"name"	:"Module",
+		"description":"Ousider &amp; Generic"
+	},
 	"items" :[
 		{
 			"name" :"url",
