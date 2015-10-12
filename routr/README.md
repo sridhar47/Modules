@@ -2,7 +2,10 @@
 
 > Simple AMD module for hash routing.
 
+>**Version** :`0.1.0`
+
 >**Author**: [Eduardo Ottaviani](//github.com/Javiani)
+
 
 ## Usage
 

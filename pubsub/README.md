@@ -2,9 +2,11 @@
 
 > Simple AMD module for Pub/Sub implementation.
 
+>**Version** :`0.1.0`
 
 >**Author**: [Eduardo Ottaviani](//github.com/Javiani)
-> Inspired : http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/
+
+> Inspired by: http://dev.housetrip.com/2014/09/15/decoupling-javascript-apps-using-pub-sub-pattern/
 
 ## Usage
 

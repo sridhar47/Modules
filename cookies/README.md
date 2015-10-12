@@ -2,6 +2,8 @@
 
 > Just a simple cookie wrapper to deal with `document.cookie` property.
 
+>**Version** :`0.1.0`
+
 >**Author**: [Eduardo Ottaviani](//github.com/Javiani)
 
 ---
