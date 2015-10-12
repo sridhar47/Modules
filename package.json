@@ -1,24 +1,24 @@
 {
-  "name": "{{MyProject}}",
-  "version": "0.0.0",
-  "description": "My Modules repository",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jails-org/Modules.git"
-  },
-  "author": "Your Name",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/jails-org/Modules/issues"
-  },
-  "homepage": "https://github.com/jails-org/Modules",
-  "keywords": [
-    "AMD",
-    "Jails",
-    "Modules"
-  ]
+    "name": "jails-modules",
+    "version": "1.0.0",
+    "description": "Jails Modules - jQuery and Zepto dependency",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/jails-org/Modules.git/tree/master"
+    },
+    "author": "Javiani",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/jails-org/Modules/issues"
+    },
+    "homepage": "https://github.com/jails-org/Modules/tree/master",
+    "keywords": [
+        "AMD",
+        "Jails",
+        "Modules"
+    ]
 }
