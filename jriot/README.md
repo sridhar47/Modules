@@ -13,6 +13,7 @@
 ---
 
 Riot.js is one of the best micro-libraries out there, and you can use all the power of virtual dom of it on your Jails Components.
+
 This is a alternative for the default `view` Jails component.
 
 
