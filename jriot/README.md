@@ -16,6 +16,7 @@ Riot.js is one of the best micro-libraries out there, and you can use all the po
 
 This is a alternative for the default `view` Jails component.
 
+[![Riot](http://javiani.files.wordpress.com/2015/06/screen-shot-2015-06-20-at-12-58-18.png)](//muut.com/riotjs/)
 
 ### Important
 
