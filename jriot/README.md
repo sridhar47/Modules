@@ -77,4 +77,4 @@ define([
 
 ## More information
 
-If you need more information about Riot.js, I really recommend you to read [Riot's site](//riotjs.com/).
+If you need more information about Riot.js, I highly recommend you to visit [Riot's site](//riotjs.com/).
