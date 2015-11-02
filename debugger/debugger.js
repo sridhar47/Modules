@@ -100,21 +100,20 @@ define(['jails'],function( jails ){
 
 			var publish 	= context.publish;
 			var subscribe 	= context.subscribe;
-			var name = context.name || 'jails';
 			var topics = {};
 
 			context.publish = function(ev, args){
 				if(!(ev in topics)){
-					console.info( print( '[{0}].publish( '+ev+' ) %cFailed, publishing before subscribe, it will try again after a subscribe. ✘', name ), 'color:gray; font-style:italic');
+					console.info( print( '[{0}].publish( '+ev+' ) %cFailed, publishing before subscribe, it will try again after a subscribe. ✘', this.name || 'jails' ), 'color:gray; font-style:italic');
 				}else{
-					console.log( print( '[{0}] %cpublished \'{1}\' ✓', name, ev ), 'color:green;', args );
+					console.log( print( '[{0}] %cpublished \'{1}\' ✓', this.name || 'jails', ev ), 'color:green;', args );
 				}
 				publish.apply(context, arguments);
 			};
 
 			context.subscribe = function(ev){
 				topics[ev] = true;
-				console.log( print( '[{0}] %csubscribed to \'{1}\' ✓', name, ev ), 'color:green;' );
+				console.log( print( '[{0}] %csubscribed to \'{1}\' ✓', this.name || 'jails', ev ), 'color:green;' );
 				subscribe.apply(this, arguments);
 			};
 		}
