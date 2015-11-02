@@ -8,6 +8,12 @@
 	},
 	"items" :[
 		{
+			"name" :"debugger",
+			"authors" :["Eduardo Ottaviani"],
+			"description" :"Debugger module helps you to visualize all the subscriptions and publishing events and also to easily track your Jails application mistakes from Jails workflow perspective.",
+			"section" :"Debug"
+		},
+		{
 			"name" :"url",
 			"authors" :["Eduardo Ottaviani"],
 			"description" :"The url module helps you to redirect application url easily. It will change only the hash from location object, used on deeplink applications.",
