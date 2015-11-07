@@ -138,7 +138,7 @@ define(['jails'],function( jails ){
 				var data = element.getAttribute('data-'+type);
 
 				jails.events.on(element, 'execute', function(e, o){
-					console.log( print('%c['+type+'.'+data+'] executed. ✓'), 'color:#336699', e.detail );
+					console.log( print('%c['+type+'.'+data+'] method executed. ✓'), 'color:#336699', e.detail );
 				});
 
 			})(m[c]);
