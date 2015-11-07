@@ -65,8 +65,6 @@ define(['jails'],function( jails ){
 
 				jails[type+'s'][m] = function(element){
 
-					fn.apply(this, arguments);
-
 					var emit = this.emit;
 					var listen = this.listen;
 
@@ -88,6 +86,17 @@ define(['jails'],function( jails ){
 						pubsub(this);
 					}
 
+					if( this.x ){
+						var x = this.x, it = this;
+						this.x = function(target){
+							return function(method){
+								console.log( print( '[{0}].x( {1} ) called %c'+method +' ✓', it.name, target ), 'color:#336699' );
+								return x.call(it, target).apply(it, arguments);
+							}
+						};
+					}
+
+					fn.apply(this, arguments);
 				};
 
 			})(m);
@@ -126,17 +135,13 @@ define(['jails'],function( jails ){
 
 			for( var c = 0; c < m.length; c++)(function(element){
 
-                var data = element.getAttribute('data-'+type);
+				var data = element.getAttribute('data-'+type);
 
-                jails.events.on(element, 'execute', function(e, o){
-                    if(!e.detail.length){
-                        console.error( print( '.x() => No method name was sent as message to {0}', type+'.'+data ) );
-                    }else{
-                        console.log( print('%c.x() Message sent => '+type+'.'+data+' ✓'), 'color:#336699', e.detail );
-                    }
-                });
+				jails.events.on(element, 'execute', function(e, o){
+					console.log( print('%c['+type+'.'+data+'] executed. ✓'), 'color:#336699', e.detail );
+				});
 
-            })(m[c]);
+			})(m[c]);
 		}
 	}
 
