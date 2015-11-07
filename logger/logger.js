@@ -14,7 +14,7 @@ define(['jails'],function( jails ){
 			string = string.replace( new RegExp('\\{' + (i-1) + '\\}', 'g'), arguments[i] );
 		}
 
-		return '👓[Jails:Module:debug] 👉 ' + string;
+		return '👓[Jails::logger] 👉 ' + string;
 	}
 
 	//1. Html markup not found
@@ -55,7 +55,7 @@ define(['jails'],function( jails ){
 	//3. Watch for emit and listening
 	function events_watcher(){
 
-		var publish, subscribe;
+		var publish, subscribe, topics = {};
 
 		for( var type in items )(function(type, items){
 
@@ -100,7 +100,6 @@ define(['jails'],function( jails ){
 
 			var publish 	= context.publish;
 			var subscribe 	= context.subscribe;
-			var topics = {};
 
 			context.publish = function(ev, args){
 				if(!(ev in topics)){
@@ -125,20 +124,19 @@ define(['jails'],function( jails ){
 		for( var type in items){
 			var m = (target||root).querySelectorAll('[data-'+type+']');
 
-			for( var c = 0; c < m.length; c++){
+			for( var c = 0; c < m.length; c++)(function(element){
 
-				var element = m[c];
-				var data = element.getAttribute('data-'+type);
+                var data = element.getAttribute('data-'+type);
 
-				jails.events.on(element, 'execute', function(e, o){
+                jails.events.on(element, 'execute', function(e, o){
+                    if(!e.detail.length){
+                        console.error( print( '.x() => No method name was sent as message to {0}', type+'.'+data ) );
+                    }else{
+                        console.log( print('%c.x() Message sent => '+type+'.'+data+' ✓'), 'color:#336699', e.detail );
+                    }
+                });
 
-					if(!e.detail.length){
-						console.error( print( '.x() => No method name was sent as message to {0}', type+'.'+data ) );
-					}else{
-						console.log( print('%c.x() Message sent => '+type+'.'+data+' ✓'), 'color:#336699', e.detail );
-					}
-				});
-			}
+            })(m[c]);
 		}
 	}
 
@@ -160,7 +158,7 @@ define(['jails'],function( jails ){
 
 		root = document.documentElement;
 
-		console.log( '👓%c[ Welcome to Jails Debugger Module ]👓', 'color:#336699');
+		console.log( '👓%c[ Welcome to Jails Logger ]👓', 'color:#336699');
 
 		no_used_modules();
 		no_module_found();

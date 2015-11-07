@@ -1,6 +1,6 @@
-# debugger
+# logger
 
->The official and beta Jails debugger.
+>The official and beta Jails logger.
 
 >**Version** :`0.1.1`
 
@@ -10,7 +10,7 @@
 
 Jails architecture relies on messaging strategy once it helps us to decouple our modules. Unfortunately, it turns out that it can be pretty hard to track and debug events in Javascript.
 
-Debugger module helps you to visualize all the subscriptions and publishing events and also to easily track your Jails application mistakes from Jails workflow perspective.
+Logger module helps you to visualize all the subscriptions and publishing events and also to easily track your Jails application mistakes from Jails workflow perspective.
 
 ## What it does
 
@@ -18,12 +18,9 @@ Debugger module helps you to visualize all the subscriptions and publishing even
 
     *When you forget to reference the modules on markup or when you forget to inject some module.*
 
-- #### Event loggers
+- #### Event Messages
 
     *Logs all the events happening on Jails application, you can visualize all the calls, messages and responses on your browser's `console`.*
-
-**Important** :
-Do not use 'debugger' as variable name, it's a reserved keyword.
 
 
 ## Usage
@@ -32,9 +29,9 @@ Do not use 'debugger' as variable name, it's a reserved keyword.
 define([
 
 	'jails',
-	'modules/debugger'
+	'mods/logger/logger'
 
-], function( jails, debug ){
+], function( jails, logger ){
 
 	jails.app('sample', function( html, data ){
 
@@ -46,7 +43,7 @@ define([
 
     //Always after an Jails.app() call
     //And always outside that function.
-	debug();
+	logger();
 
 });
 

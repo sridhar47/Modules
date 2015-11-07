@@ -8,9 +8,9 @@
 	},
 	"items" :[
 		{
-			"name" :"debugger",
+			"name" :"Logger",
 			"authors" :["Eduardo Ottaviani"],
-			"description" :"Debugger module helps you to visualize all the subscriptions and publishing events and also to easily track your Jails application mistakes from Jails workflow perspective.",
+			"description" :"Logger module helps you to visualize all the subscriptions and publishing events and also to easily track your Jails application mistakes from Jails workflow perspective.",
 			"section" :"Debug"
 		},
 		{
