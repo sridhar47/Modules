@@ -8,6 +8,12 @@
 	},
 	"items" :[
 		{
+			"name" :"Reduxtore",
+			"authors" :["Eduardo Ottaviani"],
+			"description" :"A Redux Store AMD implementation.",
+			"section" :"Persistence"
+		},
+		{
 			"name" :"Throwable",
 			"authors" :["Eduardo Ottaviani"],
 			"description" :"This modules helps you to handling exceptions and keeping all the modules working if some other module breaks. Also, helps you to subscribe to custom events to handle common errors outside your module logic.",
