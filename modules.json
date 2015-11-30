@@ -14,13 +14,13 @@
 			"section" :"Persistence"
 		},
 		{
-			"name" :"Throwable",
+			"name" :"throwable",
 			"authors" :["Eduardo Ottaviani"],
 			"description" :"This modules helps you to handling exceptions and keeping all the modules working if some other module breaks. Also, helps you to subscribe to custom events to handle common errors outside your module logic.",
 			"section" :"Error Handling"
 		},
 		{
-			"name" :"Logger",
+			"name" :"logger",
 			"authors" :["Eduardo Ottaviani"],
 			"description" :"Logger module helps you to visualize all the subscriptions and publishing events and also to easily track your Jails application mistakes from Jails workflow perspective.",
 			"section" :"Debug"

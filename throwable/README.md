@@ -8,7 +8,7 @@
 
 ---
 
-This modules helps you to handling exceptions and keeping all the modules working if some other module breaks.
+This module helps you to handling exceptions and keeping all the modules working if some other module breaks.
 Also, helps you to subscribe to custom events to handle common errors outside your module logic.
 
 ## Usage
