@@ -8,7 +8,7 @@
 	},
 	"items" :[
 		{
-			"name" :"Reduxtore",
+			"name" :"reduxtore",
 			"authors" :["Eduardo Ottaviani"],
 			"description" :"A Redux Store AMD implementation.",
 			"section" :"Persistence"
